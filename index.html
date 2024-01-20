@@ -19,7 +19,8 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'gradient-start': '#FF8938',
+                'gradient-end': '#F00',
               }
             }
           }
@@ -33,16 +34,16 @@
 </head>
 <body class="font-manrope">
     <header class="conatainer mx-auto">
-        <div class="hero min-h-screen bg-base-200">
-            <div class="hero-content flex-col lg:flex-row">
+        <div class="my-24">
+            <div class="flex justify-around items-center flex-col lg:flex-row">
               <div>
                 <h1 class="text-7xl font-extrabold">It's good<br>
                     tea time at The<br>Tea House</h1>
                 <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-                <button class="btn btn-primary">Explore More</button>
+                <button class="btn text-white border-none bg-gradient-to-r from-gradient-start to-gradient-end">Explore More</button>
               </div>
               <div>
-                <img src="images/banner.png" class="max-w-sm" />
+                <img src="images/banner.png"/>
                 <div class="-mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-60">
                     <i class="fa-solid fa-star fa-lg text-3xl" style="color: #FFD43B;"></i>
                     <div>
@@ -119,8 +120,53 @@
         </section>
 
     </main>
-    <footer>
-
+    <footer class="px-4 lg:px-48 py-10 bg-base-200 text-base-content">
+        <div class="flex justify-between my-24">
+            <img src="images/cup.png" alt="">
+            <p>
+                <span>Getting Started</span>
+                <button class="btn text-white border-none bg-gradient-to-r from-gradient-start to-gradient-end">Get Started</button>
+            </p>
+        </div>
+        <div class="footer">
+            <nav>
+                <header class="footer-title">Services</header> 
+                <a class="link link-hover">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
+              </nav> 
+              <nav>
+                <header class="footer-title">Company</header> 
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Contact</a>
+                <a class="link link-hover">Jobs</a>
+                <a class="link link-hover">Press kit</a>
+              </nav> 
+              <nav>
+                <header class="footer-title">Legal</header> 
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
+              </nav> 
+              <form>
+                <header class="footer-title">Newsletter</header> 
+                <fieldset class="form-control w-80">
+                  <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                  </label> 
+                  <div class="join">
+                    <input type="text" placeholder="username@site.com" class="py-4 bg-transparent border-b-2 border-black outline-none" /> 
+                    <button class="btn text-white border-none rounded-full bg-gradient-to-r from-gradient-start to-gradient-end"><i class="fa-solid fa-chevron-right"></i></button>
+                  </div>
+                </fieldset>
+              </form>
+        </div>
+        <div class=" footer-center p-4 text-base-content mt-10">
+            <aside>
+              <p>Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+            </aside>  
+        </div> 
     </footer>
 </body>
 </html>
